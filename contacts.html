@@ -8,27 +8,36 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="site-header">
-      <a class="site-logo" href="index.html">ShopProject</a>
-
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="index.html#advantages">Преимущества</a></li>
-          <li><a href="index.html#popular">Популярные товары</a></li>
-          <li><a href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="site-header">
+      <div class="site-header__inner">
+          <a class="site-header__logo" href="index.html">ShopProject</a>
+          <nav class="site-nav" aria-label="Основная навигация">
+              <ul class="site-nav__list">
+                  <li class="site-nav__item">
+                      <a class="site-nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link" href="catalog.html">Каталог</a>
+                  </li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link" href="product.html">Товар</a>
+                  </li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link" href="order.html">Заявка</a>
+                  </li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
   </header>
 
   <main>
+    <!-- Исправленные хлебные крошки (БЭМ) -->
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a href="index.html">Главная</a>
-      <span>Контакты</span>
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Контакты</span>
     </nav>
 
     <section class="section">
@@ -47,9 +56,10 @@
     <section class="section" id="feedback">
       <h2>Обратная связь</h2>
       <p>
-        Для отправки заявки используйте форму в модальном окне на главной странице.
+        Для отправки заявки используйте форму на странице оформления заявки.
       </p>
-      <a class="button" href="index.html#contacts">Перейти к форме</a>
+      <!-- Обновили ссылку и класс кнопки -->
+      <a class="button button--primary" href="order.html">Перейти к форме</a>
     </section>
   </main>
 
